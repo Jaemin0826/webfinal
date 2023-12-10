@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+
+
+    <style>
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+
+    .logo h1{
+            font-weight: 900;
+            animation: logo 5s infinite;
+        }
+
+        @keyframes logo {
+
+            75%{color: #d9d9d9;}
+
+            100%{color: #444444;}
+        }
+
+         .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            height: 80px;
+            padding-left: 72px;
+            padding-right: 72px;
+        }
+
+        .nav a:nth-child(3){
+            color: #f9003b;
+            font-weight: bold;
+        }
+
+        .nav a:hover{
+            color: #f9003b;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+
+        .menu a{
+            text-decoration: none;
+            color: #444444;
+
+            padding-left: 64px;
+        }
+
+        .ad{
+            height: 50px;
+            background-color: #fff;
+            color: #444444;
+            border-top: 2px solid #444444;
+            border-bottom: 2px solid #444444;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .img1{
+            background-image: url(https://cdn.pixabay.com/photo/2022/04/13/13/23/fukuoka-7130331_1280.jpg);
+            background-position: center;
+            background-size: cover;
+
+            width: 100%;
+            height: 540px;
+
+            color: #fff;
+            
+        }
+
+        .opacity1{
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px;
+        }
+
+        .title1{
+            display: flex;
+        }
+
+        .title1{
+            border-left: 6px solid #f9003b;
+        }
+
+        .conA{
+            display: flex;
+            justify-content: center;
+        }
+
+        .rental{
+            width: 1400px;
+            padding-top: 120px;
+        }
+
+        .title2{
+            font-size: 24px;
+            font-weight: bold;
+            color: #444444;
+
+            border-left: 6px solid #f9003b;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .title3{
+            font-size: 24px;
+            font-weight: bold;
+            color: #444444;
+
+            border-left: 6px solid #f9003b;
+            display: flex;
+            justify-content: space-between;
+
+            margin-top: 80px;
+        }
+
+        .title4{
+            font-size: 24px;
+            font-weight: bold;
+            color: #444444;
+
+            border-left: 6px solid #f9003b;
+            display: flex;
+            justify-content: space-between;
+
+            margin-top: 80px;
+        }
+
+        .more{
+            background-color: #F9003B;
+            padding: 8px 16px;
+            border-radius: 40px;
+            color: #fff;
+            text-decoration: none;
+
+            font-size: 12px;
+        }
+
+        .item{
+            padding-top: 40px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        
+
+        .ha{
+            display: inline-block;
+            width: 320px;
+            border: 1px solid #d9d9d9;
+
+            margin-bottom: 40px;
+            text-decoration: none;
+            color: #444444;
+            padding-bottom: 10px;
+        }
+
+        .ha h1{
+            padding-left: 10px;
+            font-size: 16px;
+        }
+
+        .ha p1{
+            padding-left: 10px;
+            font-size: 12px;
+        }
+
+        .ha p2{
+            display: inline-block;
+            padding-top: 10px;
+            padding-left: 10px;
+            font-size: 12px;
+        }
+
+        .itemimg1{
+            background-image: url(https://res.klook.com/image/upload/c_fill,w_1265,h_712/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/oxo2lydvaqlg3t1atv8h.webp);
+            background-position: center;
+            background-size: cover;
+            height: 220px;
+            margin-bottom: 10px;
+        }
+
+        .itemimg2{
+            background-image: url(https://image.kkday.com/image/get/s1.kkday.com/product_130859/20220701064500_5hyGZ/jpg);
+            background-position: center;
+            background-size: cover;
+            height: 220px;
+            margin-bottom: 10px;
+        }
+
+        .itemimg3{
+            background-image: url(https://t2.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/2epN/image/sGIYs4amWgu4MswlZqPV5NP-dvo.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 220px;
+            margin-bottom: 10px;
+        }
+
+        .itemimg4{
+            background-image: url(https://img.wemep.co.kr/deal/3/146/4581463/fbc8bcf02d944f882c62a6139cef5b2a05238fe9.jpg);
+            background-position: top;
+            background-size: cover;
+            height: 220px;
+            margin-bottom: 10px;
+        }
+
+        .itemimg5{
+            background-image: url(https://mblogthumb-phinf.pstatic.net/MjAxODA2MTBfOSAg/MDAxNTI4NjM2NTUzMTA3.98YXpDdEipwLwVLP2vdV88eHy6iqKGb5w221pZ712dcg.0XUqRbv22i23-in1rE_H3ImWrFfgjHKJud2s6LHbkMUg.JPEG.iostour/%ED%82%A4%EC%99%80%EB%AF%B8%EC%95%BC%ED%95%A8%EB%B0%94%EA%B7%B8.jpg?type=w800);
+            background-position: top;
+            background-size: cover;
+            height: 220px;
+            margin-bottom: 10px;
+        }
+
+        .itemimg6{
+            background-image: url(https://oncuration.com/wp-content/uploads/2023/02/%ED%9B%84%EC%BF%A0%EC%98%A4%EC%B9%B4-%EB%9D%BC%EB%A9%98-%EC%8B%A0%EC%8B%A0%EB%9D%BC%EB%A9%98-%EB%A7%A4%EC%9E%A5.jpg);
+            background-position: top;
+            background-size: cover;
+            height: 220px;
+            margin-bottom: 10px;
+        }
+
+
+        .itemimg7{
+            background-image: url(https://mblogthumb-phinf.pstatic.net/MjAxOTA1MTRfOTIg/MDAxNTU3ODE0MTc0NDIz.KC-rJ4beFCJ1RjNdOV28dCor66kRw6nhT6rUNi8JSuQg.Krq_emWHmLpwoIPuKDqxkVkBGz4HJKZwnAytNwK_748g.JPEG.kyushu_blog/170.JPG?type=w800);
+            background-position: top;
+            background-size: cover;
+            height: 220px;
+            margin-bottom: 10px;
+        }
+
+
+        .itemimg8{
+            background-image: url(https://mblogthumb-phinf.pstatic.net/MjAxOTA0MDlfMTQw/MDAxNTU0ODA0NjU4MjE1.8rlwQxcdCfmK-72x5_ERyMTRqd6vWHNIp7zD24VDYWog.Qxk5znbfFCPLACzXx_suDmQ0FnKQFS9gZW5a3EbhuCEg.JPEG.wlsgml850/IMG_9437.jpg?type=w800);
+            background-position: top;
+            background-size: cover;
+            height: 220px;
+            margin-bottom: 10px;
+        }
+
+        .itemimg9{
+            background-image: url(https://trvis.r10s.com/d/strg/ctrl/26/8031ac798ce498565b8bc4756b224a8f9585cff6.47.9.26.3.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 220px;
+            margin-bottom: 10px;
+        }
+
+        .itemimg10{
+            background-image: url(https://pix6.agoda.net/hotelImages/127/1270365/1270365_17022815140051295773.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 220px;
+            margin-bottom: 10px;
+        }
+
+        .itemimg11{
+            background-image: url(https://www.hotelmonterey.co.jp/upload_file/hmhfuk/stay/20170227_006.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 220px;
+            margin-bottom: 10px;
+        }
+
+        .itemimg12{
+            background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/453986389.jpg?k=bbeb6550e430d0ad98d039a4aac23d0aac3ef0286c5586dbc4fa03dfbd0e7b4f&o=&hp=1);
+            background-position: center;
+            background-size: cover;
+            height: 220px;
+            margin-bottom: 10px;
+        }
+
+        .item h2{
+            display: inline;
+        }
+
+        .ha p3{
+            font-weight: bold;
+            color: #222222;
+            font-size: 18px;
+        }
+
+        .page{
+            text-align: center;
+            height: 20px;
+
+            padding-bottom: 200px;
+            padding-top: 80px;
+        }
+
+        .page a{
+            color: #888888;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1;
+            margin-left: 20px;
+            margin-right: 20px;
+
+            transition: all 0.3s ease;
+        }
+
+        .page a:hover{
+            color: #f9003b;
+        }
+
+        .page .material-symbols-outlined{
+            line-height: 20px;
+            vertical-align: middle;
+        }
+
+        .footer{
+            background-color: #111111;
+            width: 100%;
+            height: 20vh;
+            color: #666666;
+            
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+        }
+
+        .footer h1{
+            color: #d9d9d9;
+        }
+
+        .copyright{
+            border-right: 1px solid #666666;
+            padding-right: 80px;
+        }
+
+        .info{
+            font-size: 24px;
+            text-align: center;
+
+        }
+
+        .ha:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+        
+        
+    </style>
+
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="logo"><h1>SOLT</h1></div>
+        <div class="menu">
+            <a href="mainpage.html">Best 여행지</a>
+            <a href="국내.html">국내 여행지</a>
+            <a href="해외.html">해외 여행지</a>
+            <a href="AboutUs.html">About</a>
+        </div>
+    </div>
+
+    
+    <div class="img1">
+        <div class="opacity1">
+            <div class="title1">               
+                <p1>해외<br>추천 여행지</p1>
+                <h1>후쿠오카</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="conA">
+
+        <div class="rental">
+
+            <div class="title2">
+                <p1>후쿠오카 기타 렌탈서비스 추천 상품</p1>
+                <a class="more" href="">자세히 보러가기</a>
+            </div>  
+
+            <div class="item">
+
+                <a class="ha item1" href="https://www.klook.com/ko/activity/2371-jr-kyushu-jr-pass/?gad_source=1&gclid=Cj0KCQiA4NWrBhD-ARIsAFCKwWtutZLCr3KIaSR-ta-6ktbNFIqr74puRSa52qsjg5_N2h9RdylFde4aAv6FEALw_wcB&gclsrc=aw.ds">
+                    <div class="itemimg1"></div>
+                    <h1>JR큐슈레일패스 (후쿠오카 와이드)</h1>
+                    <p1>JR 큐슈 패스 한 장으로 3/5/7일 동안 열차를 마음껏...</p1>
+                    <P2>2023.11.25 <B>좋아요321</B></P2>
+                </a>
+    
+                <a class="ha item2" href="https://dosirakesim.com/?gad_source=1&gclid=Cj0KCQiA4NWrBhD-ARIsAFCKwWsPJx7lBAgnC8pHHYYuqfnE_6IwaI-Mf2NerblLDzOUygxv3Ksp4eIaAgqIEALw_wcB  ">
+                    <div class="itemimg2"></div>
+                    <h1>해외로밍 E-SIM</h1>
+                    <p1>해외 유심 개통이 어려우시다면 E-SIM으로 간단하게 유...</p1>
+                    <P2>2023.11.22 <B>좋아요355</B></P2>
+                </a>
+    
+                <a class="ha item3" href="https://gofukuoka.jp/ko/citypass.html">
+                    <div class="itemimg3"></div>
+                    <h1>후쿠오카 투어리스트 시티 패스</h1>
+                    <p1>후쿠오카 시내를 여행할 때 편리하게 이용할 수 있는 후...</p1>
+                    <P2>2023.09.20 <B>좋아요21</B></P2>
+                </a>
+    
+                <a class="ha item4" href="https://triple.guide/articles/4aff7fd7-9f81-416d-9331-4d0af122f116">
+                    <div class="itemimg4"></div>
+                    <h1>후쿠오카 그린 패스</h1>
+                    <p1>그린패스 한 장이면 후쿠오카 공항에서 도심으로 이동하는...</p1>
+                    <P2>2023.11.22 <B>좋아요68</B></P2>
+                </a>
+
+            </div>
+
+            <div class="title3">
+                <p1>후쿠오카 맛집 추천</p1>
+                <a class="more" href="">자세히 보러가기</a>
+            </div>  
+
+            <div class="item">
+
+                <a class="ha item1" href="https://www.google.co.kr/maps/search/%EC%B9%B4%EC%99%80%EB%AF%B8%EC%95%BC+%ED%95%A8%EB%B0%94%EA%B7%B8/@33.5917594,130.41712,17z/data=!3m1!4b1?hl=ko&entry=ttu">
+                    <div class="itemimg5"></div>
+                    <h1>키와미야 함바그</h1>
+                    <p1>단연 후쿠오카 함바그 1등 맛집 키와미야 함바그</p1><br>
+                    <P2>별점4.2개 <B>좋아요32</B></P2>
+                </a>
+    
+                <a class="ha item2" href="https://www.google.co.kr/maps/place/%EC%8B%A0%EC%8B%A0%EB%9D%BC%EB%A9%98+%ED%85%90%EC%A7%84+%ED%8C%8C%EB%A5%B4%EC%BD%94%EC%A0%90/@33.5908784,130.3936791,17z/data=!3m2!4b1!5s0x3541918fefb4e511:0x1308381ad6dcf6e0!4m6!3m5!1s0x35419121947f1c8b:0xef0010f2aa747f31!8m2!3d33.590874!4d130.39855!16s%2Fg%2F11r2gvy7dw?hl=ko&entry=ttu">
+                    <div class="itemimg6"></div>
+                    <h1>신신라멘</h1>
+                    <p1>후쿠오카 로컬들이 먹는다는 진짜 하카타라멘</p1><br>
+                    <P2>별점4.2개 <B>좋아요32</B></P2>
+                </a>
+    
+                <a class="ha item3" href="https://www.google.co.kr/maps/place/%ED%95%98%EC%B9%B4%ED%83%80+%ED%86%A0%EC%9A%94%EC%9D%B4%EC%B9%98/@33.60348,130.3964159,17z/data=!3m2!4b1!5s0x354191f1b9f44ec1:0x60c9ffa8c75a360!4m6!3m5!1s0x354191f1960c779b:0x570191af83a0178c!8m2!3d33.6034756!4d130.3989908!16s%2Fg%2F11bbrlyvr1?hl=ko&entry=ttu">
+                    <div class="itemimg7"></div>
+                    <h1>하카타 토요이치</h1>
+                    <p1>100엔 스시 맛집 “완간시장”</p1><br>
+                    <P2>별점4.2개 <B>좋아요32</B></P2>
+                </a>
+    
+                <a class="ha item4" href="https://www.google.co.kr/maps/place/%EB%B4%84%EB%B0%94%ED%82%A4%EC%B9%9C/@33.5820682,130.3938026,17z/data=!3m1!4b1!4m6!3m5!1s0x354191823223ffff:0x52cd80a6d95f91f5!8m2!3d33.5820638!4d130.3963775!16s%2Fg%2F1txy02gk?hl=ko&entry=ttu">
+                    <div class="itemimg8"></div>
+                    <h1>봄바 키친</h1>
+                    <p1>후쿠오카 최고맛집 봄바키친!!!</p1><br>
+                    <P2>별점4.2개 <B>좋아요32</B></P2>
+                </a>
+
+            </div>
+
+            <div class="title4">
+                <p1>후쿠오카 인기 숙소</p1>
+                <a class="more" href="">자세히 보러가기</a>
+            </div>  
+
+            <div class="item">
+
+                <a class="ha item1" href="https://www.agoda.com/ko-kr/tokyu-stay-fukuoka-tenjin/hotel/fukuoka-jp.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1841709&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2023-12-20&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=KRW&isFreeOccSearch=false&tag=867ff307-6974-8111-acf4-99c8aafac4da&isCityHaveAsq=false&los=1&searchrequestid=838e0130-7e9f-4063-96e2-3a82ff0436eb&ds=L3OiT13u5Zzurqyj">
+                    <div class="itemimg9"></div>
+                    <h1>토큐 스테이 후쿠오카 텐진</h1>
+                    <p1>일토큐 스테이 후쿠오카는 3성급 호텔로, 다양한...</p1><br>
+                    <P2>1박</P2>  <p3>244,800원</p3>
+                </a>
+    
+                <a class="ha item2" href="https://www.agoda.com/ko-kr/hotel-monte-hermana-fukuoka/hotel/fukuoka-jp.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1841709&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2023-12-20&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=KRW&isFreeOccSearch=false&tag=867ff307-6974-8111-acf4-99c8aafac4da&isCityHaveAsq=false&tspTypes=7%2C9&los=1&searchrequestid=838e0130-7e9f-4063-96e2-3a82ff0436eb&ds=L3OiT13u5Zzurqyj">
+                    <div class="itemimg10"></div>
+                    <h1>호텔 몬테 에르마나 후쿠오카</h1>
+                    <p1>후쿠오카의 중심지인 텐진에 위치하고 있어 교통...</p1><br>
+                    <P2>1박</P2>  <p3>124,500원</p3>
+                </a>
+    
+                <a class="ha item3" href="https://www.agoda.com/ko-kr/hotel-mystays-fukuoka-tenjin/hotel/fukuoka-jp.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1841709&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2023-12-20&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=KRW&isFreeOccSearch=false&tag=867ff307-6974-8111-acf4-99c8aafac4da&isCityHaveAsq=false&los=1&searchrequestid=838e0130-7e9f-4063-96e2-3a82ff0436eb&ds=L3OiT13u5Zzurqyj">
+                    <div class="itemimg11"></div>
+                    <h1>호텔 마이스테이스 후쿠오카</h1>
+                    <p1>편안한 객실과 완벽한 휴식을 취할 수 있는 스파...</p1><br>
+                    <P2>1박</P2>  <p3>111,300원</p3>
+                </a>
+    
+                <a class="ha item4" href="https://www.agoda.com/ko-kr/plaza-hotel-tenjin/hotel/fukuoka-jp.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1841709&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2023-12-20&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=KRW&isFreeOccSearch=false&tag=1b4480ef-3a69-4a17-6722-2c30c2182f0b&isCityHaveAsq=false&los=1&searchrequestid=b62feb93-ab5c-475f-819c-81e637a7306f&ds=NmDJrIR7ZWae36W0">
+                    <div class="itemimg12"></div>
+                    <h1>플라자 호텔 텐진</h1>
+                    <p1>텐진 지역에 위치한 이 호텔은 공항 선의 아카사...</p1><br>
+                    <P2>1박</P2>  <p3>94,400원</p3>
+                </a>
+
+            </div>
+
+
+        </div>
+        
+
+    </div>
+
+    <div class="page">
+
+        <span class="material-symbols-outlined left">
+            chevron_left
+        </span>
+    
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+        <a href="">5</a>
+    
+        <span class="material-symbols-outlined right">
+            chevron_right
+        </span>
+    
+    </div>
+
+    <div class="footer">
+
+        <div class="copyright">
+            <h1>SOLT</h1>
+            <p1>상호:솔트여행ㅣ대표자명:홍길동ㅣ개인정보<br>
+            사업자등록번호:000-00-00000ㅣ이메일:asdfzxcv@asdf.com<br>
+            주소: 서울시 구구구 동동동 10-1<br>
+            Copyrightⓒ SOLT</p1>
+        </div>
+    
+        <div class="info">
+                <span class="emoji"><img src="twiiter_w.svg" width="30px" alt=""></span>
+                <span class="emoji"><img src="line_w.svg" width="30px" alt=""></span>
+                <span class="emoji"><img src="youtube_w.svg" width="30px" alt=""></span>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
